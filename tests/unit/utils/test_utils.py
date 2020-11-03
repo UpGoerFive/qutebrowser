@@ -706,9 +706,9 @@ class TestGetSetClipboard:
         (False, 'clipboard', 'fake text', 'fake text'),
         (False, 'clipboard', 'füb', r'f\u00fcb'),
     ])
-    def test_set_logging(self, clipboard_mock, caplog, selection, what,
+    def test_set_logging(self, monkeypatch, clipboard_mock, caplog, selection, what,
                          text, expected):
-        utils.log_clipboard = True
+        monkeypatch.setattr(utils, 'log_clipboard', True)
         utils.set_clipboard(text, selection=selection)
         assert not clipboard_mock.setText.called
         expected = 'Setting fake {}: "{}"'.format(what, expected)
