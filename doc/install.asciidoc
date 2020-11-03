@@ -62,6 +62,8 @@ v2.0.0, preliminarily planned for December 2020. It is recommended to
 <<tox,install qutebrowser in a virtualenv>> with a newer PyQt/Qt binary
 instead.
 
+FIXME:drop: update
+
 Debian Stretch comes with QtWebEngine in the repositories. This makes it possible
 to install qutebrowser via the Debian package.
 
@@ -96,6 +98,8 @@ by Debian's security patches. Support for it will be dropped in qutebrowser
 v2.0.0, preliminarily planned for December 2020. It is recommended to
 <<tox,install qutebrowser in a virtualenv>> with a newer PyQt/Qt binary
 instead.
+
+FIXME:drop: update
 
 With those distributions, qutebrowser is in the official repositories, and you
 can install it with apt:
